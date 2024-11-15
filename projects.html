@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Onur Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div id="page">
+
+        <header>
+            <div class="logo">
+                <a href="index.html">>Оиuя</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Projelerim</h2>
+                
+                <!-- Filtre Butonları -->
+                <div id="filter-buttons">
+                    <button onclick="filterProjects('all')">Tüm Projeler</button>
+                    <button onclick="filterProjects('recent')">En Son Projeler</button>
+                    <button onclick="filterProjects('popular')">En Beğenilen Projeler</button>
+                </div>
+                
+                <div>
+
+                    <div class="project card" data-category="recent" onclick="openModal('img/pro1.png', 'Feeding and medication schedules.\nVeterinary appointment tracking.\nPet exercise and grooming reminders.\nPet birthday and adoption anniversary celebrations.')">
+                        <div class="thumbnail"><img src="img/pro1.png" alt="Petcare"></div>
+                        <h3>Pet Care Reminder System</h3>
+                        <p>Feeding and medication schedules. <br>
+                            Veterinary appointment tracking.<br> 
+                            Pet exercise and grooming reminders.<br>
+                            Pet birthday and adoption anniversary celebrations.</p>
+                    </div>
+                    
+                    <div class="project card" data-category="popular" onclick="openModal('img/pro2.png', 'Bu uygulama sürekli oyunun dosyalarını taşımam gerektiğinde ve bir süre sonra bundan bıktığımdan dolayı (kendi üşengeçliğimden) geliştirdiğim bir uygulama. \nAzıcık düzenleme ile sürekli dosya taşıma işlemlerinizi otomatik hale getirebilirsiniz.')">
+                        <div class="thumbnail"><img src="img/pro2.png" alt="etsdlcedit"></div>
+                        <h3>Ets2 Dlc Edit</h3>
+                        <p>Bu uygulama sürekli oyunun dosyalarını taşımam gerektiğinde ve bir süre sonra bundan bıktığımdan dolayı 
+                            (kendi üşengeçliğimden) geliştirdiğim bir uygulama. <br>
+                        Azıcık düzenleme ile sürekli dosya taşıma işlemlerinizi otomatik hale getirebilirsiniz.</p>
+                    </div>
+                    
+                    <div class="project card" data-category="recent"onclick="openModal('img/pro3.png', 'Stajımı SAP Abap üzerinde yaptım . Ve bu sırada o anda abap sunucusuna bağlı (o anda aktifolan) kişileri bir tabloya zaman damgası ile kaydedip ardından başka bir rapor ile bu tablo istenirse liste istenirse pdf istenirse csv formatında hem bilgisayara indirebilecek hemde eposta atabilecek şekilde bir uygulamalar serisi geliştirmiştim.')">
+                        <div class="thumbnail"><img src="img/pro3.png" alt="proje3"></div>
+                        <h3>SAP Aktif Kullanıcılar</h3>
+                        <p>Stajımı SAP Abap üzerinde yaptım . Ve bu sırada o anda abap sunucusuna bağlı (o anda aktifolan) kişileri 
+                            bir tabloya zaman damgası ile kaydedip ardından başka bir rapor ile bu tablo istenirse liste istenirse pdf 
+                            istenirse csv formatında hem bilgisayara indirebilecek hemde eposta atabilecek şekilde bir uygulamalar serisi 
+                            geliştirmiştim.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="modal" class="modal" onclick="closeModal()">
+            <img class="modal-content" id="modalImage" alt="Project Image">
+            <div id="modalDescription"></div>
+        </div>
+        
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

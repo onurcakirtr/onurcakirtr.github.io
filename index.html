@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa - Onur Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="logo">
+                <a href="index.html">>Оиuя</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="projects.html">Projelerim</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                    <li><a href="#contactForm">İletişim</a></li>  
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="about">
+                <h1>
+                    Selam , Ben Onur.
+                </h1>
+                <p>
+                    Recep Tayyip Erdoğan Üniversitesinde bir öğrenciyim. Bilgisayar Mühendisliği Bölümünde okumaktayım. 
+                    <br>
+                    <br>
+                    <span id="datetime"></span>
+                </p>
+            </div>
+            <section class = "card">
+                <h2>İletişim için</h2>
+                <form id="contactForm" method="post">
+                    <div id="error-message"></div><br>
+                    <label for="fname">İsim</label>
+                    <input class="text" type="text" id="fname" name="firstname" placeholder="Adınızı girin..">
+                    <label for="email">E-posta</label>
+                    <input class="text" type="text" id="email" name="email" placeholder="E-posta adresinizi girin..">
+                    <label for="subject">Mesaj</label>
+                    <textarea id="subject" name="subject" placeholder="Bir şeyler yazın.." style="height:200px"></textarea>
+                    <input class="submit" type="submit" value="Gönder">
+                </form>
+            </section>
+        </main>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
